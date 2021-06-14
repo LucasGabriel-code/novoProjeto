@@ -1,0 +1,32 @@
+.gallery-vh {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-bottom: 5rem;
+}
+
+.gallery-vh h2 {
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.gallery-vh p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-image{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-image img{
+    transition: all 1s ease-in-out;
+}
+
+.gallery-image img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(6deg);
+}

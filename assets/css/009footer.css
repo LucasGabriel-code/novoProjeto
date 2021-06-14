@@ -1,0 +1,29 @@
+.footer-land-page {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+}
+.back-to-top i{
+    border-radius: 50%;   
+    cursor: pointer;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #550055;
+    background-color: #fff;
+}
+
+.back-to-top a i:hover{
+    text-shadow: 0 .1rem 10px white;
+    box-shadow: 0 .1rem 10px white;
+}

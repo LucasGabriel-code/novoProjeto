@@ -1,0 +1,73 @@
+.grid-one{
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+.grid-one-h2{
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+.grid-one-p{
+    font-size: 1.7rem;
+    margin-top: -2rem;
+    margin-bottom: 6rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    counter-reset: grid-counter;
+    font-size: 1.7rem;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    top: -3rem;
+    left: 0rem;
+    font-size: 7rem;
+    transform: rotate(15deg);
+}
+
+@media (max-width: 760px) {
+    .grid-one-h2 {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    
+    .grid-one-p {
+        font-size: 1.9rem;
+        margin-top: .1rem;   
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+}
+    .grid h3{
+        font-size: 2.5rem;
+    }
+    
+    .grid p{
+        font-size: 1.9rem;
+    }
+
+    .grid article:last-child{
+        margin-bottom: 5rem;
+    }
+}

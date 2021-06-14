@@ -1,0 +1,92 @@
+/* font-family: muli, sans-serif; */
+.root {
+    --primary-color: #fff;
+    --secondary-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: muli, sans-serif;
+}
+
+.menu-spacing{
+    margin-top: 6.1rem;
+}
+
+a {
+    text-decoration: none;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h1{
+    font-size: 6rem;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 4rem;
+}
+h4{
+    font-size: 3.5rem;
+}
+h5{
+    font-size: 3rem;
+}
+h6{
+    font-size: 2.5rem;
+}
+
+p{
+    line-height: 2.5rem;
+    margin-bottom: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-bgi {
+    background-image: url('/assets/img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.branco {
+    background: var(--primary-color);
+}

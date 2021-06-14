@@ -1,0 +1,123 @@
+.contact-form {
+    grid-column: span 2;
+}
+
+.intro-contact-content h2{
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.intro-contact-content p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.intro-contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-contact-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form .form-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    color: #fff;
+    width: 100%;
+}
+
+.form-grid legend {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.form-group{
+    flex: 1 1 40%;
+}
+
+.form-group input, .form-group textarea{
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 2.1rem;
+    outline: none;
+    background: #5e005e;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    color: #fff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: rgba(145, 143, 143, 0.436);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    box-shadow: 0 .2rem 10px 1px white; 
+    background-color: #550055;
+    color: #fff;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: .8rem;
+}
+
+.form-group button {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.form-group button:hover {
+    background-color: #550055;
+    color: #fff;
+    text-shadow: 0 .2rem 10px white;
+    box-shadow: 0 .2rem 10px white;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+@media (max-width: 760px) {
+    .intro-contact {
+        display: block;
+    }
+
+    .intro-contact-content{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .intro-contact-content p{
+        margin-top: -2rem;
+    }
+
+    .intro-contact-img img{
+        display: none;
+    }
+
+    .contact-form .form-grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

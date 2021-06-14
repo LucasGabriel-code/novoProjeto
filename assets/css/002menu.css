@@ -1,0 +1,103 @@
+.menu {
+    background-color: rgb(241, 235, 235);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: .01rem solid rgb(224, 188, 188);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul a::after{
+    content: '';
+    background: red;
+    height: .3rem;
+    width: 0;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 49%;
+    transition: all .4s;
+}
+
+.menu ul a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* Criando um Menu Mobile */
+@media only screen and (max-width: 760px){
+.menu-content, .menu-content ul{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content {
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+    bottom: 0;
+}
+
+.close-menu-label::after {
+    content: '≡';
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    background-color: #550055;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.close-menu:checked~.menu{
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    display: block;
+    content: '×';
+}
+
+.menu-spacing {
+    display: none;
+}
+}
+
+/*×*/

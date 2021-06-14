@@ -1,0 +1,56 @@
+.table-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.table-one {
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+    background-color: rgb(241, 240, 240);
+}
+
+.table-one h2{
+    font-size: 4rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.table-one p{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+table caption{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+table td, table th {
+    border: .1rem solid gray;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+thead th, tfoot td{
+    background-color: lightgray;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .table-responsive{
+        width: 100%;
+    }
+    
+    .table-one h2{
+     font-size: 3.1rem;
+    }
+}
